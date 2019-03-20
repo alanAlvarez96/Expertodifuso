@@ -1,9 +1,39 @@
 package com.company;
 
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class Difusificador {
 
-    public void difusificar(){
-
+    public ArrayList<CompetenciaDifusa>difusificar(ArrayList<Competencia> Competencias){
+        int calificacion,i,j;
+        double gradoMembresia;
+        Competencia competencia;
+        CompetenciaDifusa competenciaDifusa;
+        ArrayList<Etiqueta> etiquetas;
+        ArrayList<EtiquetaDifusa>etiquetaDifusas=new ArrayList<>();
+        ArrayList<CompetenciaDifusa>competenciaDifusas=new ArrayList<>();
+        EtiquetaDifusa etiquetaDifusa;
+        Scanner calEntrada=new Scanner(System.in);
+        Etiqueta etiqueta;
+        //codigo a partir de aqui
+        /*En escencia este metodo recibe una lista de competencias deterministas con sus respectivas*/
+        for(i=0;i<Competencias.size();i++){//recorremos todas las competencias que nos envien
+            competencia=Competencias.get(i);//obtenemos la competencia segun el indice
+            etiquetas=competencia.getEtiquetas();//obtenemos las etiquetas de la competencia actual
+            System.out.println("ingrese la calificacion para: "+competencia.getCompetencia());//pedimos la calificiacion para la competencia
+            calificacion=calEntrada.nextInt();//leemos la calificacion
+            for(j=0;j<etiquetas.size();j++){//vamos a recorrer las etiquetas de la competencia actual
+                etiqueta=etiquetas.get(j);//obtenemos la etiqueda del indice correspondiente
+                gradoMembresia=membresia(calificacion,etiqueta);//obtenemos el grado de membresia de la calificacion respecto a la etiqueta
+                etiquetaDifusa=new EtiquetaDifusa(etiqueta.getEtiqueta(),gradoMembresia);//generamos la etiqueta difusa
+                etiquetaDifusas.add(etiquetaDifusa);//añadimos a la lista de etiquetas difusas
+            }
+            competenciaDifusa=new CompetenciaDifusa(competencia.getCompetencia(),etiquetaDifusas);//generamos una nueva competencia difusa
+            etiquetaDifusas.clear();//limpiamos nuestra lista de etiquetas para dejarlas listas para usarse de nueva cuenta
+            competenciaDifusas.add(competenciaDifusa);//agregamos nuesta competencia difusa a nuestra lista de competencias difusas
+        }
+        return competenciaDifusas;
     }
     private double membresia(int calificacion, Etiqueta etiqueta){
         int gMembresia=0;
