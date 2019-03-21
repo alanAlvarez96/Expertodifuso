@@ -196,7 +196,7 @@ public class Maestro {
             }//aqui ya leimos todas las etiquetas y tenemos una lista con ellas
             competencia1=new Competencia(competencia,ListaEtiquetas,key);
         }
-        MostrarRegla(competencia1);
+        //MostrarRegla(competencia1);
         return competencia1;
     }
     private void Llenado(String etiqueta){
