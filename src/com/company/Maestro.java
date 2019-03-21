@@ -109,7 +109,7 @@ public class Maestro {
     }
     public ArrayList<Competencia> buscaSecuencial()throws IOException{
         ArrayList<Competencia> competencias=new ArrayList<>();
-        ArrayList<Etiqueta> etiquetas=new ArrayList<>();
+        ArrayList<Etiqueta> etiquetas;
         RandomAccessFile file;
         int i,j,key,n=0;
         int[] rango,pc;
@@ -122,7 +122,7 @@ public class Maestro {
         file=new RandomAccessFile("Maestro","rw");
         while ((apActual=file.getFilePointer())!=(apFinal=file.length())){
             n=n+1;
-            etiquetas.clear();
+            etiquetas=new ArrayList<>();
             key=file.readInt();
             for(i=0;i<largoCompetencia;i++)
                 c[i]=file.readChar();
@@ -130,6 +130,7 @@ public class Maestro {
             for(j=0;j<numEtiquetas;j++){
                 rango=new int[2];
                 pc=new int[2];
+
                 for(i=0;i<largoEtiqueta;i++)
                     e[i]=file.readChar();
                 label=new String(e);//esto deberia tener el nombre del label
@@ -144,8 +145,8 @@ public class Maestro {
                 etiquetas.add(etiqueta);
             }
             competencia=new Competencia(comp,etiquetas,key);
+            //MostrarRegla(competencia);
             competencias.add(competencia);
-            MostrarRegla(competencia);
         }//fin del while
         file.close();
         return competencias;
@@ -221,6 +222,7 @@ public class Maestro {
         ArrayList<Etiqueta> etiqueta=competencia.getEtiquetas();
         Etiqueta etiqueta1;
         int[]rango,pc;
+        System.out.println("------------------------------------");
         System.out.println("competencia: "+competencia.getCompetencia());
         for(int i=0;i<etiqueta.size();i++){
             etiqueta1=etiqueta.get(i);
