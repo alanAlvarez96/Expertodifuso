@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4570d51f-a392-42b1-93dd-f144f26b0e2d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/CompetenciaDifusa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/EtiquetaDifusa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Maestro" beforeDir="false" afterPath="$PROJECT_DIR$/Maestro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/indice" beforeDir="false" afterPath="$PROJECT_DIR$/indice" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/experoDifuso/com/company/Difusificador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/experoDifuso/com/company/Difusificador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/experoDifuso/com/company/EtiquetasMaestro.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/experoDifuso/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/experoDifuso/com/company/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Difusificador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Difusificador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/EtiquetasMaestro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Maestro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Maestro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,79 +24,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="276">
+              <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Difusificador.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="706">
-              <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Maestro.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="27" column="47" lean-forward="true" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="47" />
+            <state relative-caret-position="228">
+              <caret line="144" column="22" selection-start-line="144" selection-start-column="22" selection-end-line="144" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#buscaSecuencial#0;class#Maestro#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/CompetenciaDifusa.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
-              <folding>
-                <element signature="e#414#415#0" expanded="true" />
-                <element signature="e#475#476#0" expanded="true" />
-                <element signature="e#513#514#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/EtiquetaDifusa.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-              <folding>
-                <element signature="e#307#308#0" expanded="true" />
-                <element signature="e#348#349#0" expanded="true" />
-                <element signature="e#385#386#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Competencia.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Etiqueta.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -117,11 +62,11 @@
         <option value="$PROJECT_DIR$/src/com/company/Etiquetas.java" />
         <option value="$PROJECT_DIR$/src/com/company/Competencia.java" />
         <option value="$PROJECT_DIR$/Maestro" />
-        <option value="$PROJECT_DIR$/src/com/company/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Maestro.java" />
         <option value="$PROJECT_DIR$/src/com/company/EtiquetaDifusa.java" />
         <option value="$PROJECT_DIR$/src/com/company/CompetenciaDifusa.java" />
         <option value="$PROJECT_DIR$/src/com/company/Difusificador.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Maestro.java" />
       </list>
     </option>
   </component>
@@ -134,38 +79,14 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="experoDifuso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="experoDifuso" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="experoDifuso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="experoDifuso" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="experoDifuso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="experoDifuso" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="company" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553059024245" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553117374694" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -212,17 +133,29 @@
       <workItem from="1553001329209" duration="5045000" />
       <workItem from="1553011330318" duration="5754000" />
       <workItem from="1553023964119" duration="3462000" />
-      <workItem from="1553050407764" duration="6452000" />
+      <workItem from="1553050407764" duration="7776000" />
+      <workItem from="1553110171627" duration="4608000" />
+      <workItem from="1553129124478" duration="158000" />
+      <workItem from="1553129467431" duration="2232000" />
     </task>
+    <task id="LOCAL-00001" summary="Funcion difusificar y regreso de las competencias de manera difusa prueben">
+      <created>1553059070480</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1553059070480</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41282000" />
+    <option name="totallyTimeSpent" value="49604000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="725" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16993958" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.17220543" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -231,15 +164,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3298969" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.9484536" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.9484536" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.10309278" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.5979381" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.12542956" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.30584192" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -253,7 +186,7 @@
       <window_info anchor="right" id="Database" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16993958" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17220543" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -262,7 +195,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3298969" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.9484536" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.42439863" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.9484536" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -270,7 +203,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.12542956" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.30584192" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -287,17 +220,11 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Funcion difusificar y regreso de las competencias de manera difusa prueben" />
+    <option name="LAST_COMMIT_MESSAGE" value="Funcion difusificar y regreso de las competencias de manera difusa prueben" />
+  </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/Maestro.java</url>
-          <line>157</line>
-          <properties />
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="competencia.etiquetas.get(1)" />
@@ -330,13 +257,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/EtiquetasMaestro.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/Competencia.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -351,12 +272,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/EtiquetasMaestro.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/CompetenciaDifusa.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        <state relative-caret-position="299">
+          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#414#415#0" expanded="true" />
+            <element signature="e#475#476#0" expanded="true" />
+            <element signature="e#513#514#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -373,33 +296,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Maestro.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="27" column="47" lean-forward="true" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#buscaSecuencial#0;class#Maestro#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/CompetenciaDifusa.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
-          <folding>
-            <element signature="e#414#415#0" expanded="true" />
-            <element signature="e#475#476#0" expanded="true" />
-            <element signature="e#513#514#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Difusificador.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="706">
-          <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+        <state relative-caret-position="476">
+          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Maestro.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="144" column="22" selection-start-line="144" selection-start-column="22" selection-end-line="144" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

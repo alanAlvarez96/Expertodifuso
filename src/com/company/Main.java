@@ -7,7 +7,10 @@ public class Main {
     public static void main(String[] args)  {
 	    Maestro maestro=new Maestro();
         try {
-            maestro.buscarAleatorio(1);
+            maestro.buscaSecuencial();
+            //maestro.EscribirMaestro();
+            System.out.println("-----------------------------");
+            maestro.buscarAleatorio(3);
         } catch (IOException e) {
             e.printStackTrace();
         }

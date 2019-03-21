@@ -111,8 +111,8 @@ public class Maestro {
         ArrayList<Competencia> competencias=new ArrayList<>();
         ArrayList<Etiqueta> etiquetas=new ArrayList<>();
         RandomAccessFile file;
-        int i,j,key;
-        int[] rango=new int[2],pc=new int[2];
+        int i,j,key,n=0;
+        int[] rango,pc;
         long apActual,apFinal;
         String comp,label;
         char[] c=new char[largoCompetencia];
@@ -121,23 +121,31 @@ public class Maestro {
         Competencia competencia;
         file=new RandomAccessFile("Maestro","rw");
         while ((apActual=file.getFilePointer())!=(apFinal=file.length())){
+            n=n+1;
+            etiquetas.clear();
             key=file.readInt();
             for(i=0;i<largoCompetencia;i++)
                 c[i]=file.readChar();
             comp=new String(c);//aqui esto deberia de tener el nombre de la competencia
             for(j=0;j<numEtiquetas;j++){
+                rango=new int[2];
+                pc=new int[2];
                 for(i=0;i<largoEtiqueta;i++)
                     e[i]=file.readChar();
                 label=new String(e);//esto deberia tener el nombre del label
-                for(i=0;i<2;i++)
+                for(i=0;i<2;i++){
                     rango[i]=file.readInt();//obtenmos los rangos
-                for(i=0;i<2;i++)
-                    pc[i]=file.readInt();//obtenemos los puntos criticos
+                    //System.out.println(" "+rango[i]);
+                }
+                for(i=0;i<2;i++) {
+                    pc[i] = file.readInt();//obtenemos los puntos criticos
+                }
                 etiqueta=new Etiqueta(label,pc,rango);
                 etiquetas.add(etiqueta);
             }
             competencia=new Competencia(comp,etiquetas,key);
             competencias.add(competencia);
+            MostrarRegla(competencia);
         }//fin del while
         file.close();
         return competencias;

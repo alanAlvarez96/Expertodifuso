@@ -24,7 +24,7 @@ public class Difusificador {
             System.out.println("ingrese la calificacion para: "+competencia.getCompetencia());//pedimos la calificiacion para la competencia
             calificacion=calEntrada.nextInt();//leemos la calificacion
             for(j=0;j<etiquetas.size();j++){//vamos a recorrer las etiquetas de la competencia actual
-                etiqueta=etiquetas.get(j);//obtenemos la etiqueda del indice correspondiente
+                 etiqueta=etiquetas.get(j);//obtenemos la etiqueda del indice correspondiente
                 gradoMembresia=membresia(calificacion,etiqueta);//obtenemos el grado de membresia de la calificacion respecto a la etiqueta
                 etiquetaDifusa=new EtiquetaDifusa(etiqueta.getEtiqueta(),gradoMembresia);//generamos la etiqueta difusa
                 etiquetaDifusas.add(etiquetaDifusa);//añadimos a la lista de etiquetas difusas
@@ -43,6 +43,7 @@ public class Difusificador {
         int a,b,pc1,pc2;
         a=rango[0];
         b=rango[1];
+
         pc1=pc[0];
         pc2=pc[1];
         //comprobar si es triangular o trapesoidal
