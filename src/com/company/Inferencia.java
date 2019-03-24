@@ -1,11 +1,12 @@
 package com.company;
 import java.util.ArrayList;
-
+//alternativa un arreglo que mantenga todos los valores
 public class Inferencia {
     public void inferir(ArrayList<CompetenciaDifusa> competenciaDifusas){
         System.out.println("entre al metodo inferir");
-        int i,j,x,n=0,l,aux;//aux nos va a ayudar a mantener el control de la etiqueda que se va a leer de las competencias n+2
-        double min,minaux,max,min2;
+        int i,j,x,n=0,aux;//aux nos va a ayudar a mantener el control de la etiqueda que se va a leer de las competencias n+2
+        double []minimo=new double[3];
+        double max,min3;
         ArrayList<Double> maximosSalida=new ArrayList<>();//Lista con los maximos de cada lista
         ArrayList<Double>reprobado=new ArrayList<>();//arreglo de minimos para los reprobados
         ArrayList<Double>casiAprobado=new ArrayList<>();//arreglo de minimos para casi aprobados
@@ -21,36 +22,32 @@ public class Inferencia {
         //lo  primero es recorrer cada competencia
         while (n<competenciaDifusas.size()){//debe recorrer por todas las competencias
             n++;//aumentamos n para poder seguir avanzando
-            competenciaDifusa=competenciaDifusas1.get(0);//sacamos la primer competencia de la lista
+            competenciaDifusa=competenciaDifusas.get(0);//sacamos la primer competencia de la lista
             etiquetaDifusas=competenciaDifusa.getEtiquetaDifusas();//obtenemos las etiquetas de la competencia
             for(i=0;i<etiquetaDifusas.size();i++){//vamos a recorrer las etiquetas de la primer competencia de la lista
                 labelD=etiquetaDifusas.get(i);//etiqueta de la primer competencia de la lista
-                min=labelD.getGradoMembresia();//hacemos que el minimo sea la primer etiqueta grado de membresia que vamos a comparar
+                minimo[0]=labelD.getGradoMembresia();
                 cp2=competenciaDifusas1.get(1);//obtenemos siempre la segunda competencia de la lista
                 listLabel1=cp2.getEtiquetaDifusas();
-                min2=min;
                 for(aux=0;aux<listLabel1.size();aux++){//recorremos las etiquetas  de la 2 competencia de la fila
                     labelD2=listLabel1.get(aux);//obtenemos la etiqueta y vamos a compararla conetra
-                    if(min2>labelD2.getGradoMembresia()){//preguntamos si el minimo de la primera etiqueta es mayor que el de la primer etiqueda de l2 competencia
-                        min2=min;
-                        min=labelD2.getGradoMembresia();//ajustamos el minimo si es asi
-                    }
+                    minimo[1]=labelD2.getGradoMembresia();//obtenemos el grado de membresia de la segunda etiqueta
                     for(j=2;j<competenciaDifusas1.size();j++){//comparemos contra la tercer competencia  de la lista en adelante
                         cp3=competenciaDifusas1.get(j);//obtenemos la competencia
                         listLabel2=cp3.getEtiquetaDifusas();//obtenemos sus etiquetas
                         for(x=0;x<listLabel2.size();x++){//recorremos todas las etiquetas
-                            minaux=min;
                             labelD3=listLabel2.get(x);//obtenemos la primer etiqueta
-                            if(minaux>labelD3.gradoMembresia)
-                                minaux=labelD3.gradoMembresia;
+                            minimo[2]=labelD3.getGradoMembresia();
+                            min3=Minimo(minimo);
+                            //System.out.println("minimo: "+min3);
                             if((i+aux+x)<=1)
-                                reprobado.add(minaux);
+                                reprobado.add(min3);
                             if((i+aux+x)==2)
-                                casiAprobado.add(minaux);
+                                casiAprobado.add(min3);
                             if((i+aux+x)>2 && (i+aux+x)<=4)
-                                aprobado.add(minaux);
+                                aprobado.add(min3);
                             if((i+aux+x)>4)
-                                aprobadoMerito.add(minaux);
+                                aprobadoMerito.add(min3);
                         }
                     }
                 }
@@ -83,6 +80,16 @@ public class Inferencia {
                 max=lista.get(i);
         }
         return max;
+    }
+    private double Minimo(double[]min){
+        double m;
+        int i;
+        m=min[0];
+        for(i=1;i<min.length;i++){
+            if(m>min[i])
+                m=min[i];
+        }
+        return m;
     }
     private void imprimeMaximo(ArrayList<Double> maximos){
         int i;
