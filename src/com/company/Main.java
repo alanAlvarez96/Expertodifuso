@@ -8,8 +8,11 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         Difusificador df=new Difusificador();
+        Desdifuzificador desdifuzificador=new Desdifuzificador();
         Inferencia inferir=new Inferencia();
+        double calificacion;
         ArrayList<Competencia>competencias;
+        ArrayList<Double> maximos=new ArrayList<>();
         ArrayList<CompetenciaDifusa>cD;
         Competencia competencia;
         ArrayList<Etiqueta> etiquetas;
@@ -52,7 +55,9 @@ public class Main {
                 case 5:{
                     competencias=maestro.buscaSecuencial();
                     cD=df.difusificar(competencias);
-                    inferir.inferir(cD);
+                    maximos=inferir.inferir(cD);
+                    calificacion=desdifuzificador.centroide(maximos);
+                    System.out.println("la calificacion es: "+calificacion);
                 }break;
             }
 

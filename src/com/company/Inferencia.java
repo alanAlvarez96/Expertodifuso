@@ -2,11 +2,11 @@ package com.company;
 import java.util.ArrayList;
 //alternativa un arreglo que mantenga todos los valores
 public class Inferencia {
-    public void inferir(ArrayList<CompetenciaDifusa> competenciaDifusas){
+    public ArrayList<Double> inferir(ArrayList<CompetenciaDifusa> competenciaDifusas){
         System.out.println("entre al metodo inferir");
         int i,j,x,n=0,aux;//aux nos va a ayudar a mantener el control de la etiqueda que se va a leer de las competencias n+2
-        double []minimo=new double[3];
-        double max,min3;
+        double []minimo=new double[3];//arreglo donde guararemos los grados de membresia de las etiquetas
+        double max,min3,calificacion;
         ArrayList<Double> maximosSalida=new ArrayList<>();//Lista con los maximos de cada lista
         ArrayList<Double>reprobado=new ArrayList<>();//arreglo de minimos para los reprobados
         ArrayList<Double>casiAprobado=new ArrayList<>();//arreglo de minimos para casi aprobados
@@ -16,6 +16,7 @@ public class Inferencia {
         ArrayList<EtiquetaDifusa> etiquetaDifusas,listLabel1,listLabel2;//labelD2 nos va a tener las etiquetas de la competencia 2 que son las que se recorren
         EtiquetaDifusa labelD,labelD2,labelD3;
         ArrayList<CompetenciaDifusa> competenciaDifusas1=competenciaDifusas;
+        Desdifuzificador desdifuzificador=new Desdifuzificador();
         /*En escencia lo que haremos es obtener la primer competencia de la fila y combinarla con la seguda que a su vez se combinara con la 3 etc sacando los minimos
         para cada combinacion y agregandolas 4 arreglos distintos dependiendo de a donde deba ir
          */
@@ -70,6 +71,7 @@ public class Inferencia {
         max=Maximo(aprobadoMerito);
         maximosSalida.add(max);
         imprimeMaximo(maximosSalida);
+        return maximosSalida;
     }
     private double Maximo(ArrayList<Double>lista){
         int i;
